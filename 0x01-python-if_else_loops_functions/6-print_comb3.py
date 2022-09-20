@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-for i in range(0, 10):
-    for j in range(i + 1, 10):
-        if i == 8 and j == 9:
-            print("{0}{1}".format(i, j))
-        else:
-            print("{0}{1}".format(i, j), end=", ")
+for i in range(80):
+    if i / 10 < i % 10:
+        print("{:02d}, ".format(i), end="")
+print("89")

@@ -1,5 +1,5 @@
 #!/usr/bin/python3
 for i in range(97, 123):
-    j = chr(i)
-    if j != 'q' and j != 'e':
-        print("{}".format(j), end="")
+    if (i == 101) or (i == 113):
+        continue
+    print("{:c}".format(i),end="");
